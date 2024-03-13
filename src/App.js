@@ -10,7 +10,7 @@ import ScrollButton from './components/scrollbutton';
 
 const App = () => {
   return (
-    <div className="container max-w-full overflow-hidden">
+    <div className="container m-0 max-w-full overflow-hidden">
       <Header />
       <Hero />
       <About />
