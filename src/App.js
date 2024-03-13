@@ -10,7 +10,7 @@ import ScrollButton from './components/scrollbutton';
 
 const App = () => {
   return (
-    <div className="container m-0 max-w-full overflow-hidden">
+    <div className="container">
       <Header />
       <Hero />
       <About />
@@ -24,4 +24,3 @@ const App = () => {
 };
 
 export default App;
-
