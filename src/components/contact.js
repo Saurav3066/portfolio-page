@@ -14,15 +14,15 @@ const Contact = () => {
         <div className="flex flex-wrap justify-center gap-4">
           <div className="flex items-center">
             <FontAwesomeIcon icon={faEnvelope} className="text-gray-600 mr-2" />
-            <p className="text-gray-600">example@example.com</p>
+            <p className="text-gray-600">contact.vikrant3066@gmail.com</p>
           </div>
           <div className="flex items-center">
             <FontAwesomeIcon icon={faPhone} className="text-gray-600 mr-2" />
-            <p className="text-gray-600">+1 234 567 890</p>
+            <p className="text-gray-600">+91 7763082350</p>
           </div>
           <div className="flex items-center">
             <FontAwesomeIcon icon={faMapMarkerAlt} className="text-gray-600 mr-2" />
-            <p className="text-gray-600">123 Street Name, City, Country</p>
+            <p className="text-gray-600">MLV PG, Near Acharya Institute of Technology, Bengaluru, Karnataka, 560107</p>
           </div>
           <div className="flex items-center">
             <a href="#" className="text-gray-600 hover:text-blue-500 mr-2">
