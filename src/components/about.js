@@ -3,6 +3,8 @@ import sauravImage from '../components/images/saurav.png';
 import backgroundImage from '../components/images/background.png';
 
 export default function AboutMe() {
+  const resumeUrl = 'https://drive.google.com/file/d/13uw1HRzHX6Dp8slICqnYDJeJk1ZmMbi6/view?usp=drive_link'; 
+
   return (
     <div id="about" className="grid lg:py-36 py-20 gap-6 lg:gap-12" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <div className="mx-auto max-w-4xl grid items-center gap-4 lg:gap-10 lg:max-w-5xl">
@@ -20,6 +22,7 @@ export default function AboutMe() {
               <p className="text-sm text-gray-500 dark:text-gray-400">Graduated in BTech in 2023</p>
             </div>
             <div className="space-x-4 inline-flex items-center justify-center">
+              <a href={resumeUrl} target="_blank" rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full text-base font-semibold shadow-xl transition duration-300">Resume</a>
             </div>
           </div>
         </div>
