@@ -1,5 +1,5 @@
 {
-  "homepage":"https://Saurav3066.github.io/portfolio-page",
+  "homepage": "https://Saurav3066.github.io/portfolio-page",
   "name": "portfolio-page",
   "version": "0.1.0",
   "private": true,
@@ -14,6 +14,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "autoprefixer": "^10.4.18",
+    "emailjs-com": "^3.2.0",
     "postcss": "^8.4.35",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -25,8 +26,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
