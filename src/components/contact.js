@@ -68,7 +68,7 @@ const Contact = () => {
                 +91 7763082350
               </a>
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center justify-self-start">
               <FontAwesomeIcon icon={faMapMarkerAlt} className="text-gray-600 mr-4 text-2xl" />
               <p className="text-gray-600">MLV PG, Near Acharya Institute of Technology, Bengaluru, Karnataka, 560107</p>
             </div>
@@ -92,10 +92,18 @@ const Contact = () => {
           </div>
         </div>
         <div className="flex justify-center mt-8">
-          <FontAwesomeIcon icon={faFacebook} className="text-gray-600 hover:text-blue-500 mx-2 text-2xl" />
-          <FontAwesomeIcon icon={faInstagram} className="text-gray-600 hover:text-blue-500 mx-2 text-2xl" />
-          <FontAwesomeIcon icon={faLinkedin} className="text-gray-600 hover:text-blue-500 mx-2 text-2xl" />
-          <FontAwesomeIcon icon={faGithub} className="text-gray-600 hover:text-blue-500 mx-2 text-2xl" />
+          {/* <a href="https://www.facebook.com" className="text-gray-600 hover:text-blue-500 mx-2 text-2xl">
+            <FontAwesomeIcon icon={faFacebook} />
+          </a>
+          <a href="https://www.instagram.com" className="text-gray-600 hover:text-blue-500 mx-2 text-2xl">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a> */}
+          <a href="https://www.linkedin.com/in/sauravanand3066/" className="text-gray-600 hover:text-blue-500 mx-2 text-2xl">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+          <a href="https://github.com/Saurav3066" className="text-gray-600 hover:text-blue-500 mx-2 text-2xl">
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
         </div>
       </div>
     </section>
