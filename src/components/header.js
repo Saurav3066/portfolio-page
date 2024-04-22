@@ -6,6 +6,14 @@ import logoImage from '../components/images/logo.png'
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const closeMenuAndScroll = (sectionId) => {
+    setMobileMenuOpen(false);
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <header className="bg-transparent backdrop-blur-lg">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
@@ -26,35 +34,27 @@ export default function Header() {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          <a href="#about" className="text-base font-semibold leading-6 text-gray-900 hover:text-lg hover:text-blue-950 transition">
+          <a href="#about" className="text-base font-semibold leading-6 text-gray-900 hover:text-lg hover:text-blue-950 transition" onClick={() => closeMenuAndScroll('about')}>
             About
           </a>
-          <a href="#projects" className="text-base font-semibold leading-6 text-gray-900 hover:text-lg hover:text-blue-950 transition">
+          <a href="#projects" className="text-base font-semibold leading-6 text-gray-900 hover:text-lg hover:text-blue-950 transition" onClick={() => closeMenuAndScroll('projects')}>
             Projects
           </a>
-          <a href="#skills" className="text-base font-semibold leading-6 text-gray-900 hover:text-lg hover:text-blue-950 transition">
+          <a href="#skills" className="text-base font-semibold leading-6 text-gray-900 hover:text-lg hover:text-blue-950 transition" onClick={() => closeMenuAndScroll('skills')}>
             Skills
           </a>
-          <a href="#experience" className="text-base font-semibold leading-6 text-gray-900 hover:text-lg hover:text-blue-950 transition">
+          <a href="#experience" className="text-base font-semibold leading-6 text-gray-900 hover:text-lg hover:text-blue-950 transition" onClick={() => closeMenuAndScroll('experience')}>
             Experience
           </a>
-          <a href="#contact" className="text-base font-semibold leading-6 text-gray-900 hover:text-lg hover:text-blue-950 transition">
-          Contact
+          <a href="#contact" className="text-base font-semibold leading-6 text-gray-900 hover:text-lg hover:text-blue-950 transition" onClick={() => closeMenuAndScroll('contact')}>
+            Contact
           </a>
         </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-transparent backdrop-blur-3xl px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-          <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img
-                className="h-16 w-auto"
-                src={logoImage}
-                alt=""
-              />
-            </a>
+          <div className="flex items-center justify-end">
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700 bg-gray-100"
@@ -70,30 +70,35 @@ export default function Header() {
                 <a
                   href="#about"
                   className="-mx-3 block rounded-lg px-3 py-2 text-bold font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  onClick={() => closeMenuAndScroll('about')}
                 >
                   About
                 </a>
                 <a
                   href="#projects"
                   className="-mx-3 block rounded-lg px-3 py-2 text-bold font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  onClick={() => closeMenuAndScroll('projects')}
                 >
                   Projects
                 </a>
                 <a
                   href="#skills"
                   className="-mx-3 block rounded-lg px-3 py-2 text-bold font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  onClick={() => closeMenuAndScroll('skills')}
                 >
                   Skills
                 </a>
                 <a
                   href="#experience"
                   className="-mx-3 block rounded-lg px-3 py-2 text-bold font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  onClick={() => closeMenuAndScroll('experience')}
                 >
                   Experience
                 </a>
                 <a
                   href="#contact"
                   className="-mx-3 block rounded-lg px-3 py-2 text-bold font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  onClick={() => closeMenuAndScroll('contact')}
                 >
                   Contact
                 </a>

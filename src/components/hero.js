@@ -27,7 +27,7 @@ const Hero = () => {
   }, [currentTextIndex]);
   
   return (
-    <section className="text-white py-24 max-h-full overflow-hidden" 
+    <section className="text-white pt-36 pb-12 max-h-full overflow-hidden" 
              style={{ backgroundImage: `url(${heroBackground})`, 
                       backgroundSize: 'cover', 
                       backgroundPosition: 'center',
