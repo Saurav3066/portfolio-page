@@ -16,10 +16,10 @@ const Contact = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
   
-    // Update the form data to include the sender's name
+   
     const fullFormData = {
       ...formData,
-      from_name: formData.name // Add sender's name to the form data
+      from_name: formData.name 
     };
 
     emailjs.send('service_bzdmk2k', 'template_dasavw9', fullFormData, '18WAqeYp9Wqs7ZSL2')
@@ -35,7 +35,7 @@ const Contact = () => {
       })
       .catch((error) => {
         console.error('Email sending failed:', error);
-        // Optionally, you can show an error message to the user
+        
       });
   };
 
@@ -59,7 +59,7 @@ const Contact = () => {
             <div className="flex items-center mb-6">
               <FontAwesomeIcon icon={faEnvelope} className="text-gray-600 mr-4 text-2xl" />
               <a href="mailto:contact.vikrant3066@gmail.com" className="text-gray-600 hover:text-blue-500">
-                contact.vikrant3066@gmail.com
+                saurav.myworkmail.2108@gmail.com
               </a>
             </div>
             <div className="flex items-center mb-6">
