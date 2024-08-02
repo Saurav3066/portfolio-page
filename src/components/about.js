@@ -3,7 +3,7 @@ import sauravImage from '../components/images/saurav.png';
 import backgroundImage from '../components/images/background.png';
 
 export default function AboutMe() {
-  const resumeUrl = 'https://drive.google.com/file/d/10SwCPnjoWKncH7hcf27sGDiK7JDTKMjj/view?usp=sharing'; 
+  const resumeUrl = 'https://drive.google.com/file/d/1KNj8zvYKyOwW9iEH-ZNwSV9vE-k7GlUp/view?usp=sharing'; 
 
   return (
     <div id="about" className="grid lg:py-36 py-20 gap-6 lg:gap-12" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>

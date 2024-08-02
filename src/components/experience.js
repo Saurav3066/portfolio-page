@@ -16,6 +16,13 @@ const Experience = () => {
       description: 'I designed and developed a new and improved web page for the company using NextJs, HTML, CSS, and JavaScript.',
       link: 'https://rclabs.co/',
     },
+    {
+      company: 'Greet Labs',
+      position: 'Full Stack Developer',
+      duration: 'Oct 2023 - Present',
+      description: 'In my role as a MERN Stack Developer at GreetLabs, I was responsible for Designing and developing dynamic, responsive web applications using MongoDB, Express.js, React, and Node.js to ensure smooth user experiences.',
+      link: 'http://www.greetlabs.com/index.php',
+    },
   ];
 
   return (
