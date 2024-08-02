@@ -70,7 +70,7 @@ const Contact = () => {
             </div>
             <div className="flex items-center justify-self-start">
               <FontAwesomeIcon icon={faMapMarkerAlt} className="text-gray-600 mr-4 text-2xl" />
-              <p className="text-gray-600">MLV PG, Near Acharya Institute of Technology, Bengaluru, Karnataka, 560107</p>
+              <a className="text-gray-600 text-left">1st cross, 3rd main, Hemanth Nagar, Marathahalli, Banglore, Karnataka 560037</a>
             </div>
           </div>
           <div className="bg-white bg-opacity-50 p-6 rounded-md">

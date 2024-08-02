@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5, faCss3, faJs, faReact, faNodeJs, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3, faJs, faReact, faNodeJs, faPython, faGit } from '@fortawesome/free-brands-svg-icons';
 import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 import { faMobileAlt, faFileWord, faFileExcel, faFilePowerpoint, faC} from '@fortawesome/free-solid-svg-icons';
 
@@ -14,6 +14,7 @@ const Skills = () => {
     { name: 'NextJs', level: 'Intermediate', icon: faReact },
     { name: 'NodeJs', level: 'Intermediate', icon: faNodeJs },
     { name: 'SQL', level: 'Intermediate', icon: faDatabase },
+    { name: 'Git/Github', level: 'Intermediate', icon: faDatabase },
   ];
 
 
