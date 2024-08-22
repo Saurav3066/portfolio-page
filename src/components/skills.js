@@ -20,7 +20,7 @@ const Skills = () => {
 
   const otherSkills = [
     { name: 'C', level: 'Intermediate', icon: faC },
-    { name: 'C++', level: 'Intermediate', icon: null },
+    { name: 'C++', level: 'Intermediate', icon: faC },
     { name: 'UI/UX', level: 'Intermediate', icon: faMobileAlt },
     { name: 'Android', level: 'Intermediate', icon: faMobileAlt },
     { name: 'NoSQL', level: 'Intermediate', icon: faDatabase },
